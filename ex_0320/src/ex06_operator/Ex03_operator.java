@@ -1,5 +1,7 @@
 package ex06_operator;
 
+import java.util.Scanner;
+
 public class Ex03_operator {
 
 	public static void main(String[] args) {
@@ -57,7 +59,16 @@ public class Ex03_operator {
 		a=10;b=12;
 		System.out.println( ++a>=b||2+7<=b&&13-b>=0&&(a+=b)-(a%b)>10);
 //		 			
+		Scanner sc = new Scanner(System.in);
+		System.out.println("국어점수 입력 : ");
+		int k_score =sc.nextInt();
+		System.out.println("영어점수 입력 : ");
+		int e_score = sc.nextInt();
+		System.out.println("수학점수 입력 : ");
+		int m_score = sc.nextInt();
 		
+		int avg = (k_score+e_score+m_score)/3;
+		System.out.printf("평균 : ", avg);
 	}
 
 }
