@@ -48,7 +48,7 @@ public class Ex01_casting {
 		byte y = (byte)x; //1byte
 		System.out.println("[int -> byte] x의 값 : "+ x + " y의 값 :" + y);
 		
-		//int -> byte 강제 형변훤 (값이 큰 경우)
+		//int -> byte 강제 형변환 (값이 큰 경우)
 		int j = 1000;
 		byte k = (byte)j;
 		System.out.println("[int -> byte] j의 값 : "+ j + " k의 값 :" + k);

@@ -60,15 +60,18 @@ public class Ex03_operator {
 		System.out.println( ++a>=b||2+7<=b&&13-b>=0&&(a+=b)-(a%b)>10);
 //		 			
 		Scanner sc = new Scanner(System.in);
-		System.out.println("국어점수 입력 : ");
+		System.out.print("국어점수 입력 : ");
 		int k_score =sc.nextInt();
-		System.out.println("영어점수 입력 : ");
+		System.out.print("영어점수 입력 : ");
 		int e_score = sc.nextInt();
-		System.out.println("수학점수 입력 : ");
+		System.out.print("수학점수 입력 : ");
 		int m_score = sc.nextInt();
 		
-		int avg = (k_score+e_score+m_score)/3;
-		System.out.printf("평균 : ", avg);
+		int sum = (k_score+e_score+m_score);
+		int avg = sum/3;
+		System.out.printf("평균 : %d\n", avg);
+		
+		String result3 = k_score > 40 && e_score > 40 && m_score > 40 && avg>= 60 ? "합격" : "불합격";
+		System.out.println(result3);
 	}
-
 }

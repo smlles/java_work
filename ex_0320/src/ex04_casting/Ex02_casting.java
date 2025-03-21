@@ -23,6 +23,8 @@ public class Ex02_casting {
 		double d4 = 9.123456789;
 		float f4 = (float)d4;
 		System.out.println("[정밀도차이] d4의 값 : " + d4 + ",f4의 값 : "+ f4);
+		// 정수 오버플로우 = 최대값 -> 최소값 / 언더플로우 = 최소값 -> 최대값
+		// 실수 오버플로우 : infinity / 언더플로우 : 0.0
 	}
 
 }

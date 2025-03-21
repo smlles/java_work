@@ -10,7 +10,8 @@ public class Ex01_scanner {
 		
 //		java.util패키지에 있는 scanner클래스를 이용해야한다
 //		다른 패키지에 있는 기능을 사용하기 위해서 import를 해야한다.
-		//import 경로 
+		//import 경로 클래스명
+		//모르겠으면 오브젝트 클래스 ctrl + space
 		//let obj = new Object()
 		//obj.key = value; // 프로퍼티가 없으면 추가
 		Scanner sc = new Scanner(System.in);  //Scanner 객체 선언
@@ -18,6 +19,13 @@ public class Ex01_scanner {
 //		int n = sc.nextInt(); //정수 입력받기
 //		System.out.println(n);
 		
+//		Scanner 클래스
+//		next() : 문자열 입력 (띄어쓰기 하면 끝)
+//		nextLine() : 문자열 입력 (엔터치면 끝)
+//		nextInt() : 정수 입력
+//		nextFloat() : 실수입력(float형)
+//		nextDouble() : 실수입력(double형)
+//		
 		//나이 입력받기
 		//제 나이는 n세입니다.
 		
