@@ -34,26 +34,26 @@ public class Ex02_do_while {
 		//입력 될 때 까지 계속 입력 요구하기
 		//비밀번호는 9486
 		Scanner sc = new Scanner(System.in);
-//		boolean log_in = false;
-//		int pw = 9486;
-//		int input_pw;
-//		do {
-//		System.out.println("비밀번호를 입력하세요. : " );
-//		input_pw = sc.nextInt();
-//		if (input_pw != pw) {
-//			System.out.println("비밀번호가 틀렸습니다. 다시 입력하세요.");
-//			
-//		}else if(input_pw == pw){
-//			log_in = true;
-//			System.out.println("접속 성공!");
-//		}
-//		}while (false);
-//		
+		boolean log_in = true;
+		int pw = 9486;
+		int input_pw;
+		do {
+		System.out.println("비밀번호를 입력하세요. : " );
+		input_pw = sc.nextInt();
+		if (input_pw != pw) {
+			System.out.println("비밀번호가 틀렸습니다. 다시 입력하세요.");
+			
+		}else if(input_pw == pw){
+			log_in = false;
+			System.out.println("접속 성공!");
+		}
+		}while (log_in);
+		
 		// 학생의 국어, 영어, 수학 점수를 입력받는다.
 		//단, 각 과목은 40점 이상이어야하며
 		//40점 미만이면 다시 입력받는다.
 		int k_score,e_score,m_score;
-		boolean score = false;
+		boolean score = true;
 		do {
 			System.out.println("국어 점수를 입력하세요.");
 			k_score = sc.nextInt();
@@ -66,9 +66,9 @@ public class Ex02_do_while {
 				System.out.println("불합격입니다. 다시 입력하세요.");
 			}else if (k_score>=40&&e_score>=40&&m_score>=40) {
 				System.out.println("합격입니다.");
-				score = true;
+				score = false;
 			}
-		}while (score = false);
+		}while (score);
 		
 		
 		
