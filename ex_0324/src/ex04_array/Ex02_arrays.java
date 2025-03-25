@@ -113,6 +113,19 @@ public class Ex02_arrays {
 		
 		//로또번호 생성하기
 		//1~45사이의 난수를 발생시켜, 로또번호를 생성하는 프로그램 만들기
-		Random 
+		Random r = new Random();
+		
+		 int[] lotto_numbers = new int[7];
+		 retry_lotto:for(int i =0 ;i<lotto_numbers.length;i++) {
+			lotto_numbers[i]=r.nextInt(45)+1;
+			for(int j = 0 ; j<i;j++) {
+				if(lotto_numbers[i]==lotto_numbers[j]) {
+					lotto_numbers[i]=r.nextInt(10)+1;
+					i--;
+					continue retry_lotto;
+				}
+			}
+		}
+		 System.out.println(Arrays.toString(lotto_numbers));
 	}
 }
