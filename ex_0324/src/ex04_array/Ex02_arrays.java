@@ -76,7 +76,6 @@ public class Ex02_arrays {
 			newCards[i]=cards[i];
 		}
 		
-		
 		//3.System 이용
 		int[] newCards3 = new int[cards.length];
 		System.arraycopy(cards,0,newCards3,0,cards.length);
@@ -120,7 +119,6 @@ public class Ex02_arrays {
 			lotto_numbers[i]=r.nextInt(45)+1;
 			for(int j = 0 ; j<i;j++) {
 				if(lotto_numbers[i]==lotto_numbers[j]) {
-					lotto_numbers[i]=r.nextInt(10)+1;
 					i--;
 					continue retry_lotto;
 				}

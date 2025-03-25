@@ -1,5 +1,6 @@
 package ex04_array;
 
+import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -158,6 +159,18 @@ public class Exam1 {
 			System.out.println("50원 개수 : " + count_coin[2]);
 			System.out.println("10원 개수 : " + count_coin[3]);
 			
+//			Random r = new Random();
 			
+			 int[] lotto_numbers = new int[6];
+			 retry_lotto:for(int i =0 ;i<lotto_numbers.length;i++) {
+				lotto_numbers[i]=r.nextInt(45)+1;
+				for(int j = 0 ; j<i;j++) {
+					if(lotto_numbers[i]==lotto_numbers[j]) {
+						i--;
+						continue retry_lotto;
+					}
+				}
+			}
+			 System.out.println(Arrays.toString(lotto_numbers));		
 	}
 }
