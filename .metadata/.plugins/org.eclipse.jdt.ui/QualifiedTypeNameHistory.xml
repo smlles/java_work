@@ -7,4 +7,6 @@
     <fullyQualifiedTypeName name="ex04_exam.UserInfo"/>
     <fullyQualifiedTypeName name="javax.swing.plaf.synth.SynthOptionPaneUI"/>
     <fullyQualifiedTypeName name="ex05_inheritance.DefaultA"/>
+    <fullyQualifiedTypeName name="ex02_class_casting.DeskCalender"/>
+    <fullyQualifiedTypeName name="ex02_class_casting.FourWheelBike"/>
 </qualifiedTypeNameHistroy>

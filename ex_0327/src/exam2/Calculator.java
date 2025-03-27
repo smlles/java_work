@@ -6,5 +6,5 @@ abstract public class Calculator {
 	
 	abstract public int substract(int a, int b);
 	
-	abstract public int average(int a, int b);
+	abstract public double average(int[] a);
 }
