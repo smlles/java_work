@@ -1,10 +1,16 @@
 package exam01;
 
 public class SharpPencil extends Pen{
-	Pen p = new Pen();
-	class SharpPencil{
-		 p.getAmount(){return amount;}
-		p.setAmount(int amount){this.amount = amount;}
-		private int width; //펜의 굵기
+	private int width;
+	public void setWidth(int width) {
+		this.width = width;
+	}
+	public int getWidth() {
+		return width;
+	}
+	public SharpPencil(int amount, int width){
+		super(amount);
+		 this.width = width;
+		 
 	}
 }
