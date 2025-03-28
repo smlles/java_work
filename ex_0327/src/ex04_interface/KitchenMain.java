@@ -9,13 +9,11 @@ public class KitchenMain {
 		
 		Menu1 m1 = new Kitchen();
 		System.out.println("자장면 : " +m1.jajang());
-		System.out.println("짬뽕 : " +m1.JJamBBong());
+	//	System.out.println("짬뽕 : " +m1.JJamBBong());
 		
 		Menu2 m2 = new Kitchen();
-		System.out.println("자장면 : " +m2.jajang());
+	//	System.out.println("자장면 : " +m2.jajang());
 		System.out.println("짬뽕 : " +m2.JJamBBong());
-		
-		
 	}
 }
 //추상클래스와 인터페이스 차이점
