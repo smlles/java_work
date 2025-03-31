@@ -21,6 +21,8 @@ public class Exam2 {
 		}
 		if (str1.equals(str2)) {
 			System.out.println("회문");
+		}else {
+			System.out.println("회문아님");
 		}
 		//System.out.println(str1);
 		//System.out.println(str2);
