@@ -13,22 +13,31 @@ public class Main {
 		ArrayList<UserInfo> ui = new ArrayList<>();
 		
 		
-		while(true) {
+		out:while(true) {
 		UserInfo userInfo= new UserInfo();
 
 		System.out.print("아이디 입력 : ");
-		userInfo.setId(sc.nextLine());
+		String uid =sc.nextLine();
+		
+		userInfo.setId(uid);
 		System.out.print("비밀번호 입력 : ");
 		userInfo.setPw(sc.nextInt());
-		
-		ui.add(userInfo);
 		sc.nextLine();
 		for(int i = 0; i<ui.size();i++) {
-			System.out.println(	userInfo.getId());
-			System.out.println(	userInfo.getPw());
+			if(uid.equals(ui.get(i).getId())) {
+				System.out.println("중복된 아이디");
+				continue out;
+			}
+		}
+		ui.add(userInfo);
+		
+		
+		for(int i = 0; i<ui.size();i++) {
+			System.out.println(ui.get(i).getId());
+			System.out.println(ui.get(i).getPw());
 			System.out.println("======================");
 				
-		}
+			}
 		}
 	}
 }

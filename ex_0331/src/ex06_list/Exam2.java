@@ -32,9 +32,16 @@ public class Exam2 {
 	
 	public static void viewProduct(List<String> list,String product){
 		//중복제거
-		list.remove(product);
+		if(list.contains(product)) {
+			System.out.println("이미 있음");
+			
+			list.remove(product);
+		}else {
+			list.add(0,product);
+		}
+		
 		//최근 검색 맨앞
-		list.add(0,product);
+		
 		System.out.println("상품 클릭 : "+product + " -> " + list);
 	}
 	//viewProduct

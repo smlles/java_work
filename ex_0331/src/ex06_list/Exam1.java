@@ -23,15 +23,24 @@ public class Exam1 {
 		out:while(true) {
 			System.out.print("아이디 입력 : ");
 		String id = sc.nextLine();
+		
+		
+		for(int i=0;i<list1.size();i++) {
+				if(id.equals(list1.get(i))) {
+					System.out.println("중복");
+					continue out;
+					
+				}
+			
+			
+				
+		
+		}
 		list1.add(id);
-
-		for(String x : list1) {
-			if(list1.contains(id)) {
-				System.out.println("중복");
-				continue out;
-			}
-		System.out.printf(x+" ");
-			}
+		for(int i=0;i<list1.size();i++) {
+		System.out.printf(list1.get(i)+" ");
+		}
+		
 		}
 	}
 }
