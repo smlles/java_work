@@ -15,23 +15,28 @@ public class Ex02_map {
 		//아이디 존재하지 않음 / 비밀번호 불일치/ 로그인 성공
 		String id = "";
 		int pw;
-		System.out.print("ID 입력 : ");
-		id = sc.nextLine();
-		System.out.print("PW 입력 : ");
-		pw = sc.nextInt();
-		boolean checkid = true;
-		for(int i=0;i<map.size();i++) {
-			if(!id.equals(map.containsKey(i))) {
-				if(checkid) {
-					System.out.println("아이디가 없음!");
-				}
-			}
-			else if(!(pw==map.get(i))){
-				System.out.println("비밀번호 불일치!");
+		
+		boolean checkid = false;
+		
+		while(!checkid) {
+			System.out.print("ID 입력 : ");
+			id = sc.nextLine();
+			System.out.print("PW 입력 : ");
+			pw = sc.nextInt();
+			sc.nextLine();
+			if(!map.containsKey(id)) {
+				System.out.println("아이디가 없음!");
+				continue;
 			}else {
-				System.out.println("로그인 성공!");
+					if(map.get(id)!=pw){
+						System.out.println("비밀번호 불일치!");
+						continue;
+					} else {
+						System.out.println("로그인 성공!");
+						checkid=true;
+						break;
+				}
 			}
 		}
 	}
-
 }
