@@ -7,6 +7,9 @@ public class KitchenMain {
 		System.out.println("자장면 : " +k.jajang());
 		System.out.println("짬뽕 : " +k.JJamBBong());
 		
+		
+		//부모타입으로 자동 타입변환 가능
+		//부모타입으로부터 만들어진 메서드만 사용 가능
 		Menu1 m1 = new Kitchen();
 		System.out.println("자장면 : " +m1.jajang());
 	//	System.out.println("짬뽕 : " +m1.JJamBBong());
@@ -16,6 +19,9 @@ public class KitchenMain {
 		System.out.println("짬뽕 : " +m2.JJamBBong());
 	}
 }
+//인터페이스는 객체를 직접 생성할 수 없다
+//인터페이스를 구현한 클래스의 객체를 생성
+
 //추상클래스와 인터페이스 차이점
 //개념적 목적
 //추상클래스 : 상속받아서 기능을 확장시키는데 목적
