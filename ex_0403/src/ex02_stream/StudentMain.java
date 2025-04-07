@@ -4,7 +4,7 @@ import java.util.Comparator;
 import java.util.stream.Stream;
 
 public class StudentMain {
-
+ 
 	public static void main(String[] args) {
 		Student[] students = {
 				new Student("이자바",3,300),

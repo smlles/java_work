@@ -1,6 +1,7 @@
 package ex03_phlymorphism;
 
 public class LZ extends Computer{
+	
 	@Override
 	public void powerOn() {
 		super.powerOn();
