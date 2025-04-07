@@ -4,7 +4,9 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
+import java.util.OptionalDouble;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 public class Ex03_Stream {
@@ -63,10 +65,15 @@ public class Ex03_Stream {
 		int sum= list.stream().reduce(0, (a,b)->a+b);
 		System.out.println("list의 합 : "+sum);
 		
+		//IntStream과 같은 기본형 스트림에는, 통계정보를 얻을 수 있는 메서드가 있다.
 		
+		//sum()
+		int sum2 = IntStream.of(1,2,3,4,5).sum();
 		
+		OptionalDouble res = IntStream.of(1,2,3,4,5).average();
+		System.out.println(res.getAsDouble());
 		
-		
+		IntStream.of(1,2,3,4,5).min();
 		
 		}
 
