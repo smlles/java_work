@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.util.List"/>
-    <fullyQualifiedTypeName name="ex01_innerClass.PermitExample"/>
-    <fullyQualifiedTypeName name="ex01_innerClass.PermitExample.InClass"/>
-    <fullyQualifiedTypeName name="ex01_innerClass.AnonymousExample"/>
-    <fullyQualifiedTypeName name="ex01_innerClass.AnonymousExample.Button"/>
-    <fullyQualifiedTypeName name="ex01_innerClass.buttonClickListener"/>
-    <fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
     <fullyQualifiedTypeName name="java.util.InputMismatchException"/>
     <fullyQualifiedTypeName name="java.lang.Exception"/>
     <fullyQualifiedTypeName name="ex03_try_catch.InputErrorException"/>
@@ -52,12 +45,19 @@
     <fullyQualifiedTypeName name="java.util.Optional"/>
     <fullyQualifiedTypeName name="java.util.stream.IntStream"/>
     <fullyQualifiedTypeName name="java.util.OptionalDouble"/>
-    <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="java.util.stream.Collector"/>
     <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
     <fullyQualifiedTypeName name="java.util.Comparator"/>
     <fullyQualifiedTypeName name="ex02_thread.ThreadName"/>
-    <fullyQualifiedTypeName name="java.lang.Thread"/>
     <fullyQualifiedTypeName name="ex01_thread.YieldExample"/>
     <fullyQualifiedTypeName name="ex02_syncronized.SyncronizedEx"/>
+    <fullyQualifiedTypeName name="java.lang.InterruptedException"/>
+    <fullyQualifiedTypeName name="java.security.cert.TrustAnchor"/>
+    <fullyQualifiedTypeName name="java.lang.Thread"/>
+    <fullyQualifiedTypeName name="ex01_Thread.AddStackThread"/>
+    <fullyQualifiedTypeName name="ex01_Thread.PopStackThread"/>
+    <fullyQualifiedTypeName name="ex01_Thread.MyDeamonRunnable"/>
+    <fullyQualifiedTypeName name="java.io.File"/>
+    <fullyQualifiedTypeName name="java.io.FileInputStream"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
 </qualifiedTypeNameHistroy>
