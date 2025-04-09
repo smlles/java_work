@@ -2,7 +2,6 @@ package ex03_fileInputStream;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.util.Arrays;
 
 public class Exam1 {
 	public static void main(String[] args) {
@@ -14,24 +13,31 @@ public class Exam1 {
 		//File객체에 경로 알려주기
 		//length()를 통해, 내용크기만큼 배열을 만들 수 있다.
 		byte[] b_read = new byte[(int)f.length()];
-		byte[] b_read2 = new byte[(int)f.length()];
+		
 		FileInputStream fis = null;
-		boolean textEqual = true ;
+		boolean textEqual = true;
 		if(f.exists()) {
 			try {
 				fis = new FileInputStream(f);
 				fis.read(b_read);
-				System.out.println(Arrays.toString(b_read));
-				
 				String res = new String(b_read);
-			
+		/*		StringBuilder sb = new StringBuilder(res);
+				StringBuilder rev = sb.reverse();
+				System.out.println(sb);
+				System.out.println(rev);*/
+				
+				
 				for(int i = 0; i<res.length();i++) {
-					if(res.charAt(i)!=res.charAt(res.length()-i)) {
-						textEqual = false;
+					if(res.charAt(i)!=res.charAt(res.length()-i-1)) {
+						textEqual =false;
+						break;
 					}
 				}
-				
-				
+				if(!textEqual) {
+					System.out.println(res+" : 회문이 아님");
+				}else {
+					System.out.println(res+" : 회문임");
+				}
 				
 				
 			} catch (Exception e) {
@@ -39,11 +45,7 @@ public class Exam1 {
 			}finally {
 				try {
 					if(fis != null) {
-						if(!textEqual) {
-							System.out.println("회문");
-						}else {
-							System.out.println("회문아님");
-						}
+						
 						fis.close();
 					}
 				} catch (Exception e2) {
