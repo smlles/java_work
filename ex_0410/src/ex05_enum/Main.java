@@ -1,5 +1,7 @@
 package ex05_enum;
 
+import java.util.Calendar;
+
 public class Main {
 
 	public static void main(String[] args) {
@@ -23,8 +25,9 @@ public class Main {
 		for(Operation op :Operation.values()) {
 			System.out.println(op + " : " +op.apply(x, y));
 		}
-		
-		
+		//객체를 직접 생성하는 것이 아니라 
+		//getInstance() 메서드를 통해, 만들어진 객체를 불러올 수 있다.
+		Calendar cal = Calendar.getInstance();
 		
 	}
 

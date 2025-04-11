@@ -3,6 +3,7 @@ package ex06_annotation;
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
 
 //선언 키워드는 @interface
 //타겟지정
@@ -10,7 +11,11 @@ import java.lang.annotation.RetentionPolicy;
 //시간지정
 @Retention(RetentionPolicy.RUNTIME)
 public @interface TestInfo {
-	//어노테이션의 속성은 메스더 형태로 정의한다.
+	String name();
+	int career() default 1;
+	String[] skills();
+	
+	//어노테이션의 속성은 메서드 형태로 정의한다.
 	
 	
 	//어노테이션 속성의 반환형은 제한적
@@ -20,8 +25,8 @@ public @interface TestInfo {
 	//String value() throw Exception;
 	
 	//속성은 매개변수를 가지지 않는다.
-	String name(String input);
+	//String name(String input);
 	
 	//속성에 기본값을 지정 할 수 있다.
-	String value() default "홍길동";//추상메서드로 선언해야함
+	//추상메서드로 선언해야함
 }
