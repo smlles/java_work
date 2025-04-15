@@ -20,7 +20,10 @@ public class exam1 {
 	public static void main(String[] args) {
 		HashMap<String,String> cOrder = new HashMap<>();
 		HashMap<String,Integer> ordersCount = new HashMap<>();
-		List<String> orders = Arrays.asList("Alice:TV", "Bob:TV","Alice:Phone","Charlie:TV","David:Tablet","Eve:Phone", "Frank:Phone","Alice:Phone");
+		List<String> orders = 
+				Arrays.asList("Alice:TV", "Bob:TV","Alice:Phone",
+						"Charlie:TV","David:Tablet","Eve:Phone",
+						"Frank:Phone","Alice:Phone");
 		
 // Alice = TV , Phone ,Phone
 // Bob = TV
@@ -34,6 +37,10 @@ public class exam1 {
 			String[] order = orders.get(i).split(":");
 			//for(int j = 0 ; j<order.length;j++) {
 				cOrder.put(order[0], order[1]);
+				//ex) Alice:TV 
+				//ordersCount.put("TV", ordersCount.getOrDefault("TV", 0)+1);
+				//ordersCount.put("TV", 0+1);
+				//ordersCount.put("TV", 1);
 				ordersCount.put(order[1], ordersCount.getOrDefault(order[1], 0)+1);
 		//	}
 		}
