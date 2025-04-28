@@ -13,4 +13,8 @@ public class Student {
 		System.out.println("나의 나이: "+age);
 		System.out.println("나의 학번: "+stuNum);
 	}
+	public void info() {
+		System.out.printf("이름 : %s, 나이: %d, 학번 : %d\n",name,age,stuNum);
+	}
+	
 }
